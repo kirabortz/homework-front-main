@@ -15,9 +15,13 @@ export const HW3 = () => {
 
     const handleChange = (text: string) => setCurrentText(text);
     const handleSave = (text: string) => {
-        setTexts([...texts, text])
+        setTexts(prevState => {
+            return [text, ...prevState]
+        })
         handleChange('')
     };
+
+
 
     return (
         <div id={'hw03'}>
