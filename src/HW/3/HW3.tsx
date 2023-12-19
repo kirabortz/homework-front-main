@@ -11,7 +11,7 @@ export const HW3 = () => {
 
 
     const [currentText, setCurrentText] = useState('');
-    const [texts, setTexts] = useState<string[]>([]);
+    const [texts, setTexts] = useState<string[]>(['То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',]);
 
     const handleChange = (text: string) => setCurrentText(text);
     const handleSave = (text: string) => {
